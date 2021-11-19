@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-dars</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <main class="container">
+        <form action="http://127.0.0.1/index.php" method="get" autocomplete="off" class=" form">
+            <div class="name field">
+                <label for="name">Ismingizni kiriting:</label>
+                <input 
+                    
+                    name="ism" 
+                    type="text" 
+                    minlength="3" 
+                    maxlength="10" 
+                    placeholder="Ism kiriting..." 
+                    id="name"
+                    value="Ism"
+                    disabled   />
+            </div>
+            
+            <div class="surname field">
+                <label for="surname" >Familiya kiriting:</label>
+                <input 
+                    name="familiya" 
+                    id="surname" 
+                    type="text"   
+                    value="John Doe"
+                    tabindex="1" 
+                    readonly />
+                <input type="time"  />
+                
+            </div>
+            
+    
+            <div class="file field">
+                <label for="file_enter">Fayl kiriting:</label>
+                <input tabindex="3"  id="file_enter" type="file">
+            </div>
+    
+            <div class="password field">
+                <label for="password">Parol kiriting:</label>
+                <input tabindex="2" id="password" type="password">
+            </div>
+    
+            <div class="age field">
+                <label for="age">Yosh kiriting:</label>
+                <input id="age" type="number" />
+            </div>
+            
+            <div class="text field">
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+            
+            <label for="cars">Sizga qaysi mashina yoqadi?</label>
+            <select name="cars" id="cars">
+                <option value="1">BMW</option>
+                <option value="2">Mersedes E200</option>
+                <option value="3">Damas</option>
+                <option value="4">Nexia</option>
+                <option value="10" selected>Malibu 2</option>
+            </select>
+            <div class="controls field">
+                <input type="submit" />
+                <input type="button" value="Click" />
+    
+                <input  type="hidden" value="Bu hidden input"/>
+            </div>
+        </form>
+
+
+        <form>
+            <input type="button" value="tugma"/>
+            <button type="button">Tugma</button>
+            <a href="">Tugma</a>
+        </form>
+    </main>
+
+</body>
+</html>
